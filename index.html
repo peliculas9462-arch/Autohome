@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+<title>Madison</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Arvo:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/modernizr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header class="cf">
+    <div id="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+    <ul id="social-bar" class="cf">
+      <li class="dribbble"><a href="#" title="Dribbble"></a></li>
+      <li class="facebook"><a href="#" title="Facebook"></a></li>
+      <li class="googleplus"><a href="#" title="googleplus"></a></li>
+      <li class="twitter"><a href="#" title="twitter"></a></li>
+    </ul>
+  </header>
+  <nav class="cf">
+    <ul id="nav" class="sf-menu">
+      <li class="current-menu-item"><a href="index.html">INICIO</a></li>
+      <li><a href="blog.html">PROCESO</a></li>
+      <li><a href="#">INFORMACIÓN </a>
+        <ul>
+          <li><a href="page.html">1</a></li>
+          <li><a href="page-elements.html">2</a></li>
+        </ul>
+      </li>
+      <li><a href="work.html">FOTOS</a></li>
+      <li><a href="contact.html">COMENTARIOS</a></li>
+    </ul>
+  </nav>
+
+  <div id="main" class="cf">
+    <div class="slider-wrapper">
+      <div id="slider" class="nivoSlider"> 
+        <img title="Caption Text" src="img/dummies/slides/01.jpg" alt=""> 
+        <img src="img/dummies/slides/02.jpg" alt=""> 
+        <img src="img/dummies/slides/03.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="tagline" style="color: white; margin-bottom: 30px;">
+      UN HOGAR QUE SE ADAPTA A LAS DIFERENTES ETAPAS DE LA VIDA
+    </div>
+
+    <!-- FOTO VERTICAL CORRECTA CON MARCO VERDE OSCURO -->
+    <div style="width: 100%; text-align: center; margin: 40px 0; clear: both;">
+      <div style="display: inline-block; padding: 12px; background: #145a32; border: 3px solid #145a32; border-radius: 6px; box-shadow: 0 10px 25px rgba(0,0,0,0.6);">
+        <img src="img/foto grupo.png" alt="Estudiantes de grado 11" style="display: block; width: 360px; height: 500px; object-fit: cover; border-radius: 2px;">
+      </div>
+      <div style="color: white; font-size: 1.2em; font-family: 'Lato', sans-serif; max-width: 700px; margin: 20px auto 0 auto; line-height: 1.6; font-weight: 700;">
+        Tres estudiantes de grado 11 unidos por la tecnología domótica para mejorar la vida de los adultos mayores. Conoce nuestro proyecto 'AUTONOMÍA EN EL HOGAR'.
+      </div>
+    </div>
+
+    <!-- SECCIÓN DEL JUEGO A ANCHO COMPLETO -->
+    <div style="width: 100%; clear: both; margin: 30px 0;">
+      <div class="line-heading" style="color: white; margin-bottom: 20px;">
+        responde <span style="color: white;">con atención </span>
+      </div>
+
+      <div style="width: 100%; max-width: 100%; border: 2px solid #1e8449; border-radius: 8px; padding: 25px; background: rgba(0,0,0,0.3); box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
+        <!-- Título -->
+        <div style="background: #145a32; color: white; padding: 12px 18px; font-weight: bold; text-transform: uppercase; font-size: 1.05em; border-radius: 6px; margin-bottom: 15px; text-align: center;" id="domo-title">
+            Quiz de Domótica (1/9)
+        </div>
+
+        <!-- Pregunta -->
+        <div style="background: #ffffff; color: #333; padding: 16px; border-radius: 6px; font-size: 1em; line-height: 1.4; margin-bottom: 15px; min-height: 50px; text-align: center;" id="domo-question">
+            ¿Cómo ayudan los sistemas de domótica en el hogar a las personas mayores?
+        </div>
+
+        <!-- Opciones -->
+        <div style="display: flex; flex-direction: column; gap: 10px;" id="domo-options">
+            <button type="button" onclick="evaluarDomotica(0)" style="background: #f8f9fa; border: 1.5px solid #145a32; color: #2c3e50; padding: 12px 18px; border-radius: 6px; cursor: pointer; text-align: left; font-size: 0.95em; font-weight: 600;" id="d-opt-0">Mejorando su seguridad, comodidad y autonomía</button>
+            <button type="button" onclick="evaluarDomotica(1)" style="background: #f8f9fa; border: 1.5px solid #145a32; color: #2c3e50; padding: 12px 18px; border-radius: 6px; cursor: pointer; text-align: left; font-size: 0.95em; font-weight: 600;" id="d-opt-1">Haciendo que la casa sea más difícil de usar</button>
+            <button type="button" onclick="evaluarDomotica(2)" style="background: #f8f9fa; border: 1.5px solid #145a32; color: #2c3e50; padding: 12px 18px; border-radius: 6px; cursor: pointer; text-align: left; font-size: 0.95em; font-weight: 600;" id="d-opt-2">Eliminando la necesidad de electricidad</button>
+        </div>
+
+        <!-- Resultado -->
+        <div id="domo-result" style="margin-top: 15px; font-weight: bold; font-size: 1em; color: white; text-align: center;"></div>
+      </div>
+    </div>
+
+    <script>
+        const bancoDomotica = [
+            {
+                question: "¿Cómo ayudan los sistemas de domótica en el hogar a las personas mayores?",
+                options: ["Mejorando su seguridad, comodidad y autonomía", "Haciendo que la casa sea más difícil de usar", "Eliminando la necesidad de electricidad"],
+                correct: 0
+            },
+            {
+                question: "¿Qué utilidad principal tiene un sensor de movimiento en la habitación de un adulto mayor durante la noche?",
+                options: ["Reproducir música a alto volumen", "Encender luces guía automáticamente para evitar caídas", "Bloquear las puertas desde el exterior"],
+                correct: 1
+            },
+            {
+                question: "¿Qué ventajas ofrecen los asistentes virtuales mediante comandos de voz para los adultos mayores?",
+                options: ["Cambiar el color de las paredes de forma mágica", "Obligar a pedir comida a domicilio todos los días", "Permitir controlar la iluminación y dispositivos sin necesidad de desplazarse"],
+                correct: 2
+            },
+            {
+                question: "¿Qué función cumple un botón de emergencia o alerta médica conectada en la casa?",
+                options: ["Avisar rápidamente a familiares o servicios de ayuda ante un accidente", "Apagar el internet de toda la casa", "Reiniciar el televisor"],
+                correct: 0
+            },
+            {
+                question: "¿Por qué es importante la automatización de la iluminación (luces automáticas) para personas mayores?",
+                options: ["Consume mucha más energía eléctrica", "Evita que tengan que buscar interruptores a oscuras reduciendo riesgos", "Sirve únicamente como decoración estética"],
+                correct: 1
+            },
+            {
+                question: "¿Qué puede detectar un sensor de gas o humo inteligente en la cocina?",
+                options: ["La cantidad de alimentos guardados en la nevera", "El clima que hace en la calle", "Descuidos o fugas peligrosas para alertar a tiempo"],
+                correct: 2
+            },
+            {
+                question: "¿Cómo benefician los termostatos inteligentes en el cuidado de la salud en casa?",
+                options: ["Mantienen una temperatura agradable y segura evitando resfriados", "Enfrían la casa por completo sin previo aviso", "Miden la presión arterial de los habitantes"],
+                correct: 0
+            },
+            {
+                question: "¿Qué significa que un espacio u objeto esté diseñado con enfoque en la 'autonomía' del adulto mayor?",
+                options: ["Que los aísla por completo de su familia", "Que les permite realizar sus actividades diarias por más tiempo sin depender de otros", "Que deben vivir sin ningún tipo de tecnología"],
+                correct: 1
+            },
+            {
+                question: "¿Cuál es el objetivo principal de integrar tecnología y planos accesibles en un hogar inteligente?",
+                options: ["Hacer que la casa parezca una nave espacial", "Complicar el acceso a las habitaciones principales", "Lograr espacios seguros y amigables que mejoren la calidad de vida"],
+                correct: 2
+            }
+        ];
+
+        let indicePregunta = 0;
+        let totalAciertos = 0;
+
+        function evaluarDomotica(seleccionado) {
+            const preguntaActual = bancoDomotica[indicePregunta];
+            const cajaResultado = document.getElementById("domo-result");
+            
+            for (let i = 0; i < 3; i++) {
+                document.getElementById("d-opt-" + i).style.pointerEvents = "none";
+            }
+
+            if (seleccionado === preguntaActual.correct) {
+                document.getElementById("d-opt-" + seleccionado).style.background = "#145a32";
+                document.getElementById("d-opt-" + seleccionado).style.color = "white";
+                cajaResultado.style.color = "#2ecc71";
+                cajaResultado.textContent = "¡Correcto! 🎉";
+                totalAciertos++;
+            } else {
+                document.getElementById("d-opt-" + seleccionado).style.background = "#e74c3c";
+                document.getElementById("d-opt-" + seleccionado).style.color = "white";
+                document.getElementById("d-opt-" + preguntaActual.correct).style.background = "#145a32";
+                document.getElementById("d-opt-" + preguntaActual.correct).style.color = "white";
+                cajaResultado.style.color = "#e74c3c";
+                cajaResultado.textContent = "Incorrecto ❌";
+            }
+
+            indicePregunta++;
+            setTimeout(siguientePasoDomotica, 1600);
+        }
+
+        function siguientePasoDomotica() {
+            if (indicePregunta < bancoDomotica.length) {
+                const preguntaActual = bancoDomotica[indicePregunta];
+                document.getElementById("domo-title").textContent = "Quiz de Domótica (" + (indicePregunta + 1) + "/9)";
+                document.getElementById("domo-question").textContent = preguntaActual.question;
+                
+                for (let i = 0; i < 3; i++) {
+                    const btn = document.getElementById("d-opt-" + i);
+                    btn.textContent = preguntaActual.options[i];
+                    btn.style.background = "#f8f9fa";
+                    btn.style.color = "#2c3e50";
+                    btn.style.pointerEvents = "auto";
+                }
+                document.getElementById("domo-result").textContent = "";
+            } else {
+                document.getElementById("domo-title").textContent = "¡Quiz Finalizado! 🏆";
+                document.getElementById("domo-question").textContent = "Completaste las 9 preguntas. Aciertos totales: " + totalAciertos + " de 9.";
+                document.getElementById("domo-options").style.display = "none";
+                document.getElementById("domo-result").textContent = "¡Gran trabajo en tu proyecto!";
+            }
+        }
+    </script>
+
+    <!-- PIE DE PÁGINA / WIDGETS -->
+    <ul class="widget-cols cf" style="background: #145a32; padding: 20px; border-radius: 8px;">
+      <li class="first-col">
+        <div class="widget-block">
+          <h4 style="color: white;">Lugar de diseño</h4>
+          <p style="color: white;">Este proyecto fue desarrollada en un ambiente donde logramos observar como a travez de la tecnologia podemos hallar la solución a las personas más importantes de nuestro manteniendo su autonomia...</p>
+        </div>
+      </li>
+      <li class="second-col">
+        <div class="widget-block">
+          <h4 style="color: white;">Donde empezo</h4>
+        </div>
+      </li>
+      <li class="third-col">
+        <div class="widget-block">
+          <h4 style="color: white;">Dirección</h4>
+          <div style="width:200px; height:200px; border-radius:50%; overflow:hidden;">
+            <iframe
+                src="https://www.google.com/maps?q=5.721,-72.933&output=embed"
+                width="200" 
+                height="200" 
+                style="border:0;">
+            </iframe>
+          </div>
+        </div>
+      </li>
+      <li class="fourth-col">
+        <div class="widget-block">
+          <h4 style="color:white;">Redes</h4>
+          <ul>
+            <li class="cat-item"><a href="#" style="color: white;">youtube</a></li>
+            <li class="cat-item"><a href="#" style="color: white;">instagram</a></li>
+            <li class="cat-item"><a href="#" style="color: white;">facebook</a></li>
+            <li class="cat-item"><a href="#" style="color: white;">telegram</a></li>
+            <li class="cat-item"><a href="#" style="color: white;">hola</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="scroll"></li>
+    </ul>
+    <div class="footer-divider"></div>
+  </div> <!-- /#main -->
+</div> <!-- /.wrapper -->
+
+<script src="js/jquery.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+<script src="js/superfish-1.4.8/js/superfish.js"></script>
+<script src="js/superfish-1.4.8/js/supersubs.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<script src="js/nivoslider.js"></script>
+<script src="js/tabs.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+<title>Madison | Work</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Arvo:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/modernizr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header class="cf">
+    <div id="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+    <ul id="social-bar" class="cf">
+      <li class="dribbble"><a href="#" title="Dribbble"></a></li>
+      <li class="facebook"><a href="#" title="Facebook"></a></li>
+      <li class="googleplus"><a href="#" title="googleplus"></a></li>
+      <li class="twitter"><a href="#" title="twitter"></a></li>
+    </ul>
+  </header>
+  <nav class="cf">
+    <ul id="nav" class="sf-menu">
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="blog.html">PROCESO</a></li>
+      <li><a href="#">INFORMACIÓN</a>
+        <ul>
+          <li><a href="page.html">1</a></li>
+          <li><a href="page-elements.html">2</a></li>
+        </ul>
+      </li>
+      <li class="current-menu-item"><a href="work.html">FOTOS</a></li>
+      <li><a href="contact.html">COMENTARIOS</a></li>
+    </ul>
+  </nav>
+  <div id="main" class="cf">
+  
+   <style>
+  .mi-cuadricula-sensores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea las 3 columnas idénticas */
+    gap: 40px 30px; /* Separación de 40px entre filas y 30px entre columnas */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+
+  .tarjeta-sensor {
+    background: #ffffff;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* Estilos para el enlace exclusivo del título */
+  .enlace-titulo {
+    text-decoration: none;
+    display: inline-block;
+    color: #222222;
+  }
+
+  .enlace-titulo:hover .titulo-sensor {
+    color: #007bff; /* Cambia de color sutilmente al pasar el mouse por el título */
+  }
+
+  .contenedor-foto {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Altura fija para alinear perfectamente las filas */
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; /* Separación entre la foto estática y el título */
+  }
+
+  /* PROTECCIÓN TOTAL: Esto evita que las capturas o fotos gigantes desordenen tu web */
+  .contenedor-foto img {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 250px !important;
+    object-fit: contain !important; /* Ajusta la foto sin deformarla ni recortarla */
+  }
+
+  .titulo-sensor {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #222222;
+    transition: color 0.2s ease;
+  }
+
+  .descripcion-sensor {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+    padding: 0 5px;
+    text-align: justify; /* Hace que los textos largos se vean más ordenados */
+  }
+
+  /* Adaptación automática para pantallas de celulares */
+  @media (max-width: 768px) {
+    .mi-cuadricula-sensores {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+</style>
+
+<div class="mi-cuadricula-sensores">
+  
+  <div class="tarjeta-sensor">
+    <div class="contenedor-foto">
+      <img src="img/imagen1.jpg" alt="Sensor de Movimiento">
+    </div>
+    <a href="single.html" class="enlace-titulo">
+      <h3 class="titulo-sensor">Sensor de Movimiento</h3>
+    </a>
+    <p class="descripcion-sensor">Es un dispositivo electrónico que detecta la presencia o el desplazamiento de personas u objetos dentro de un área determinada. Funciona mediante tecnologías como infrarrojos, intrasonido o microondas, que identifican cambios en el entorno cuando algo se mueve.se utiliza en sistemas de seguridad, iluminación automática y domótica .</p>
+  </div>
+
+  <div class="tarjeta-sensor">
+    <div class="contenedor-foto">
+      <img src="img/imagen2.jpg" alt="Sensor de Temperatura">
+    </div>
+    <a href="single.html" class="enlace-titulo">
+      <h3 class="titulo-sensor">arduino</h3>
+    </a>
+    <p class="descripcion-sensor">Arduino es una plataforma electrónica programable que permite crear proyectos automatizados e interactivos mediante una placa y diferentes componentes, como sensores, luces, motores y pantallas. Se utiliza para recibir información del entorno, procesarla y ejecutar acciones según las instrucciones programadas, por lo que es muy común en proyectos de robótica, domótica, automatización, electrónica y sistemas de control. .</p>
+  </div>
+
+  <div class="tarjeta-sensor">
+    <div class="contenedor-foto">
+      <img src="img/imagen3.jpg" alt="Sensor de Presión">
+    </div>
+    <a href="single.html" class="enlace-titulo">
+      <h3 class="titulo-sensor"> bloque de terminales de tornillo</h3>
+    </a>
+    <p class="descripcion-sensor">Este componente no es un LED, sino un bloque de terminales de tornillo de 2 pines (bornera o screw terminal) montado sobre una placa de pruebas (protoboard). Funciona como un conector eléctrico que permite fijar firmemente cables externos mediante sus tornillos superiores, asegurando un contacto seguro y removible con las conexiones internas de la protoboard sin necesidad de soldadura.</p>
+  </div>
+
+  <div class="tarjeta-sensor">
+    <div class="contenedor-foto">
+      <img src="img/imagen4.jpg" alt="Sensor de Pulso">
+    </div>
+    <a href="single.html" class="enlace-titulo">
+      <h3 class="titulo-sensor">Sensor cardiaco</h3>
+    </a>
+    <p class="descripcion-sensor">es un dispositivo electrónico que sirve para medir el ritmo del corazón de una persona, es decir, los latidos por minuto. Generalmente funciona detectando los cambios en el flujo de sangre, normalmente mediante una luz (como en relojes inteligentes o pulseras) que analiza cómo circula la sangre en la piel. Este sensor se usa en equipos médicos, relojes deportivos y dispositivos de salud para monitorear el estado físico, el ejercicio y la salud del corazón en tiempo real tiempo real.</p>
+  </div>
+
+  <div class="tarjeta-sensor">
+    <div class="contenedor-foto">
+      <img src="img/imagen5.jpg" alt="Cables Jumpers">
+    </div>
+    <a href="single.html" class="enlace-titulo">
+      <h3 class="titulo-sensor">Table LCD</h3>
+    </a>
+    <p class="descripcion-sensor"> un dispositivo electrónico portátil que utiliza una pantalla de cristal líquido (LCD, Liquid Crystal Display) para mostrar imágenes, texto y contenido multimedia. Este tipo de pantalla funciona gracias a una capa de cristales líquidos que, al recibir electricidad, cambian su comportamiento para dejar pasar o bloquear la luz, permitiendo así formar las imágenes. Las tabletas LCD se usan para estudiar, dibujar, ver videos o navegar en internet, y se caracterizan por su buena calidad de imagen, bajo consumo de energía y diseño delgadoo.</p>
+  </div>
+
+  <div class="tarjeta-sensor">
+    <div class="contenedor-foto">
+      <img src="img/imagen6.jpg" alt="Display LCD">
+    </div>
+    <a href="single.html" class="enlace-titulo">
+      <h3 class="titulo-sensor">Cables macho y hembra</h3>
+    </a>
+    <p class="descripcion-sensor"> tipos de conectores utilizados en electricidad y electrónica para unir dispositivos de forma segura; el conector macho es aquel que tiene pines o puntas que sobresalen y se insertan en otro conector, mientras que el conector hembra posee orificios o entradas donde encajan esos pines, funcionando como un sistema de conexión complementario que permite una unión fácil, estable y que puede desconectarse cuando sea necesario.</p>
+  </div>
+
+</div>
+
+  <!-- PIE DE PÁGINA / WIDGETS -->
+  <ul class="widget-cols cf" style="background: #145a32; padding: 20px; border-radius: 8px; margin-top: 40px;">
+    <li class="first-col">
+      <div class="widget-block">
+        <h4 style="color: white;">Lugar de diseño </h4>
+        <p style="color: white;">Este proyecto fue desarrollada en un ambiente donde logramos observar como a travez de la tecnologia podemos hallar la solución a las personas más importantes de nuestro manteniendo su autonomia..</p>
+      </div>
+    </li>
+    <li class="second-col">
+      <div class="widget-block">
+        <h4 style="color: white;">Donde empezo </h4>
+      </div>
+    </li>
+    <li class="third-col">
+      <div class="widget-block">
+        <h4 style="color: white;">Dirección</h4>
+        <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden;">
+          <iframe 
+              src="https://www.google.com/maps?q=5.7144,-72.9339&hl=es&z=14&output=embed"
+              width="100%" 
+              height="100%" 
+              style="border:0;"
+              allowfullscreen="" 
+              loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </li>
+    <li class="fourth-col">
+      <div class="widget-block">
+       <h4 style="color:white;">Redes</h4>
+        <ul style="list-style: none; padding: 0;">
+         <li class="cat-item"><a href="#" style="color: white; text-decoration: none;">youtube</a></li>
+         <li class="cat-item"><a href="#" style="color: white; text-decoration: none;">instagram</a></li>
+         <li class="cat-item"><a href="#" style="color: white; text-decoration: none;">facebook</a></li>
+         <li class="cat-item"><a href="#" style="color: white; text-decoration: none;">telegram</a></li>
+         <li class="cat-item"><a href="#" style="color: white; text-decoration: none;">twitter</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="scroll"></li>
+  </ul>
+  <div class="footer-divider" style="border-top: 2px solid #145a32;"></div>
+  
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+<script src="js/superfish-1.4.8/js/superfish.js"></script>
+<script src="js/superfish-1.4.8/js/supersubs.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<script src="js/nivoslider.js"></script>
+<script src="js/tabs.js"></script>
+</body>
+</html>
